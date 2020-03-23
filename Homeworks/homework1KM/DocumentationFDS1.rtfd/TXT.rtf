@@ -1,0 +1,348 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Arial-BoldMT;\f2\fswiss\fcharset0 Helvetica;
+\f3\fswiss\fcharset0 Arial-BoldItalicMT;\f4\fswiss\fcharset0 Helvetica-Oblique;\f5\fswiss\fcharset0 Helvetica-Bold;
+}
+{\colortbl;\red255\green255\blue255;\red209\green105\blue6;\red203\green42\blue5;\red0\green0\blue0;
+\red252\green87\blue8;\red27\green128\blue255;\red21\green93\blue255;\red0\green0\blue0;\red239\green239\blue239;
+\red161\green0\blue63;\red15\green57\blue175;\red38\green255\blue255;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c86161\c49166\c0;\cssrgb\c84173\c24610\c0;\cssrgb\c0\c1\c1;
+\cssrgb\c100000\c43066\c0;\cssrgb\c11095\c58865\c100000;\cssrgb\c8872\c47049\c100000;\cssrgb\c0\c0\c0;\cssrgb\c94902\c94902\c94902;
+\cssrgb\c69983\c8943\c31331;\cssrgb\c6238\c31382\c74150;\cssrgb\c8302\c100000\c100000;\cssrgb\c100000\c100000\c100000\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\margl1440\margr1440\vieww10260\viewh15280\viewkind0
+\deftab720
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs25 \cf0    January 30, 2020\
+   Fundamental Data Structure\
+   COS 221	\
+\pard\pardeftab720\ri0\qr\partightenfactor0
+\cf0      	200069406\
+Homework 1\
+Kristina Myftaraga\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\
+     The program written in C++, contains a set of data representing a Factory. It sells its products to the store suppliers. It has different divisions that produce different artifacts. The factory offers services to its clients as well. \
+\
+\pard\tx220\tx720\tx9351\pardeftab720\li720\fi-720\ri0\partightenfactor0
+\ls1\ilvl0\cf0 In the program I use the header files:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri0\partightenfactor0
+\ls2\ilvl0\cf2 {\listtext	\uc0\u8226 	}#include \cf3 <iostream>      \cf4 Responsible for input/output stream\cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\ri0\partightenfactor0
+\ls3\ilvl0\cf2  	\'95	#include \cf5 <vectors>        \cf0 The library responsible for the vectors\
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+The first class is 
+\f1\b \cf6 Division
+\f0\b0 \cf0 .  \
+The private attributes GUID, name, phone number, description, and the last one )( cost Division * parentDivision)  is pointing to the parent Division. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 {{\NeXTGraphic Pasted Graphic.png \width6900 \height2780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs25 \cf0  \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\qc\partightenfactor0
+
+\f3\i\b \cf0 METHODS
+\f0\i0\b0 : \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx593\pardeftab593\pardirnatural\partightenfactor0
+\cf0 The program has a default constructer for this class. It has all attributes assigned to a default value with a pointer.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0  {{\NeXTGraphic 0A137B7F-24D4-4C6E-920F-85ECCB3A9717.png \width6460 \height2760 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+\
+There is another constructer with the data for each element. Division is a custom data type, where the parent category is passed by reference.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 1.png \width15160 \height2780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs25 \cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 It is important for the program inserting a getter for the name in order not to charge and later in the program to be displayed to the user. \
+\
+ 	string getName() const \{return this-> name;\}\
+\
+\
+\pard\pardeftab720\ri0\qc\partightenfactor0
+
+\f3\i\b \cf0 AXIOMS:
+\f0\i0\b0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 GUID must be unique across other divisions\'92 GUIDs.  We check to all data entered to Division class. Then compare the size, check elements one by one and then return true if the element/ GUID is unique and if not, return false. Meaning, it let the user know that the GUID is not different from the others, there is an ERROR!\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 3.png \width10300 \height3200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f0\fs25 \cf0 \
+\pard\pardeftab720\ri0\partightenfactor0
+\cf0 \
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+The other class is 
+\f1\b \cf7 Artifacts
+\f0\b0 \cf0 . \
+It doesn\'92t have an inheritance relationship with the Division class. \
+The private attributes are: GUID, Name, Category, Description => all string type; Price, Discount => double type; Quantity => integer type.\
+cost Division * parentDivision  is pointing to the parent Division and the DiscountType as an enum type. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 {{\NeXTGraphic Pasted Graphic 2.png \width7280 \height2780 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\qc\partightenfactor0
+
+\f3\i\b\fs25 \cf0 METHODS
+\f0\i0\b0 : \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+Initially, I decided to write the enum type. It is a user-defines data-type. It is used in this case to represent two types of discounts; amount and percentage.\
+\
+	Enum DiscountType \{ amount, percentage\};\
+\
+The default constructor for the Artifact class, without parameters, just assigned to a default value. Strings with \'93 \'93 , doubles with 0.0, numbers/ integers with 0, and the enum type amount. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 5.png \width6540 \height4120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+The other constructor is with parameters. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic 1__#$!@%!#__Pasted Graphic 3.png \width14700 \height2560 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+It is important to get the Artifact\'92s name. It will be needed in the main so we can output that to the user. It would be a virtual funk so we can pass the value. \
+\
+  string getName ()\{ return Name;\}\
+\
+\
+The Artifacts have discounts and it is important to know the price after the discount. The getEffectivePrice() method is going to demonstrate that. \
+Initially we declare the variable inside the method (local variable effectivePrice), then we write the formula. There are two scenarios. In case the user wants the amount then the formula is: 
+\fs22\fsmilli11413 \cf8 \cb9 \expnd0\expndtw0\kerning0
+ReturnPrice \'96 Discount
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0  ( this->Price - this->Discount ), if they want the percentage version the formula is : 
+\fs22\fsmilli11413 \cf8 \cb9 \expnd0\expndtw0\kerning0
+ReturnPrice \'96 Price * Discount / 100 \
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 10.png \width10280 \height3820 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 km\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\i \cf0 *A little bit later I will mention the axiom inside the method. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\i0 \cf0 \
+Another method is getTotalPrice(). It will return the price after the discount. The getEffectivePrice() is taken from Artifact Class.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 12.png \width11660 \height3240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\i \cf0 **A little bit later I will mention the axiom inside the method. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\i0 \cf0 \
+\
+\pard\pardeftab720\ri0\qc\partightenfactor0
+
+\f3\i\b\fs25 \cf0 AXIOMS:
+\f0\i0\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+Another requirement for this project, was that the Price, Discount and the Quantity can\'92t be negative. I inserted one of these statement (the price return ) as a throw exception as an example of another version. \
+\
+\
+*At the getEffectivePrice() method there is an axiom. The condition is that the effectivePrice cannot be negative. So, a simple if statement is going to be executed: \
+\
+	if(effectivePrice > 0)\{return effectivePrice;\} \
+\
+**At the  getTotalPrice() method there is an axiom as well. The condition is that the totalPrice cannot be negative. A simple if statement is going to be executed:\
+\
+	if(totalPrice>0)\{return totalPrice;\}\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs25 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f2\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+The other class is 
+\f5\b \cf7 Service
+\f2\b0 \cf0 .\
+There is an inheritance between the class Artifact and Service:\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf10 	Class\cf0  \cf11 Service\cf0  : \cf10 public\cf0  \cf12 Artifact\cf0  \
+\
+The private attributes of the Service class are : nameOfService => string type; Duration, Rate and RateDiscount => double type;  \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic 1__#$!@%!#__Pasted Graphic 5.png \width6580 \height2120 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\qc\partightenfactor0
+
+\f3\i\b\fs25 \cf0 METHODS
+\f0\i0\b0 : 
+\f2\fs24 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+Initially, I decided to write the enum type. It is a user-defines data-type. It is used in this case to represent two types of discounts; amount and percentage.\
+\
+	enum RatediscountType \{ amount, percentage\};\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\partightenfactor0
+\cf0 The default constructor for the Service class, without parameters, just assigned to a default value. Doubles with 0.0 and the enum type amount. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 14.png \width7160 \height2100 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+The Service class constructor , now overriding the default constructor. And since it is inherited by the Artifact class, it takes all parameters of the parent class. \
+\
+The method getEffectiveRtae() . Firstly we declare the local variable effectiveRate, then there are two conditions. If the user want the amount version :
+\fs22\fsmilli11413 \cf8 \cb9 \expnd0\expndtw0\kerning0
+Return Rate \'96 RateDiscount, \cb13 else if he wants a percentage : \cb9 Return Rate \'96 Rate * RateDiscount / 100\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf8 \cb13 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 17.png \width12060 \height4800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\i \cf0 *A little bit later I will mention the axiom inside the method. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\i0 \cf0 \
+\
+The method getTotalPrice() gets the price after the discount rate is executed. The formula would be: A
+\fs22\fsmilli11413 \cf8 \cb9 \expnd0\expndtw0\kerning0
+rtifact::GetTotalPrice() + GetEffectiveRate() * Duration 
+\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 16.png \width14900 \height3060 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f4\i \cf0 **A little bit later I will mention the axiom inside the method. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\i0 \cf0 \
+\
+\pard\pardeftab720\ri0\qc\partightenfactor0
+
+\f3\i\b\fs25 \cf0 AXIOMS:
+\f0\i0\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+
+\f2\fs24 \cf0 \
+Another requirement for this project, was that the Rate, RateDiscount and the Duration can\'92t be negative. \
+\
+*At the getEffectiveRate() method there is an axiom. The condition is that the effectivePrice cannot be negative. So, a simple if statement is going to be executed: \
+\
+	if(effectiveRate > 0)\{return effectiveRate;\} \
+\
+**At the  getTotalPrice() method there is an axiom as well. The condition is that the totalPrice cannot be negative. A simple if statement is going to be executed:\
+\
+	if(totalPrice>0)\{return totalPrice;\}\
+\pard\pardeftab720\ri0\partightenfactor0
+
+\f0\fs25 \cf0 \'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97
+\f2\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+In the main menu I have defined three vectors in order to store the data for the Factory and Market. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 20.png \width5200 \height1280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+I have added three new divisions of the Division collection. I decided to add homeAppliances, transportationVehicles and maintenance. One demonstration is as below: \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 21.png \width14780 \height1100 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+As it can be clearly seen, I have just assigned the values for each parameter at the Division constructor with parameter. (GUID, name, phonenumber and Description).\
+The same is for two others. \
+\
+As I mentioned before, GUID is required to be unique. We call the method that we created at the Division class. Below we continue with the HomeAppliance example. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 23.png \width13800 \height2160 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+We use push_back() in order to add elements from below. \
+\
+Next, I added three products to the Artifact list. These have the correct Division from the list available and instantiated divisions in the previous step.\
+Again we just follow the criteria that we have beforehand inserted at the Artifacts. \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 24.png \width14980 \height1900 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+Then we add the new artifact to the Artifact vector.\
+	Artifacts.push_back(BissellVacuumCleaner);\
+\
+In addition, I have added three Services at the Services list. These have a valid Division. \
+We follow the Service contractor with all the parameters including the ones of the Artifact class since it is the parent class. We choose the type of discount for service and artifact. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 8.png \width14400 \height1240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+Then we add the new services to the Service vector.\
+	Services.push_back(repairHomeAppliances);\
+\
+\
+And in conclusion, we add two loops to show the Name and the Total Price of each artifact and service in the Market Store or Factory. \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic 26.png \width13340 \height4200 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+And here are some screenshots of the output. I have done a couple of invalid values just to see if there is any errors in my program. \
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic 1__#$!@%!#__Pasted Graphic 10.png \width8360 \height6800 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+ }

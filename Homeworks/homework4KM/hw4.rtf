@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c0;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Kristina Myftaraga\
+200069406\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\qc\partightenfactor0
+\cf0 Documentation\
+HW4\
+\
+In my program I implemented BM string pattern application.The input was taken by the user and the output contains the names of the Service and Artifact class elements and GUIDs ordered in the number of occurrences.\
+\cb2 \
+First we initialize all occurrences as -1. Then a pattern search function that uses HelperMethod of Boyer Moore Algorithm. To fill the helper method we call the preprocessing function HelperMethod() for given patterns is short of the pattern with respect to text. \
+We keep reducing index j of pattern while characters of pattern and text are matching at this shift s. \
+If the pattern is present at the current shift, then index j will become -1 after the above loop.\
+Then we shift the pattern so that the next character in text aligns with the last occurrence of it in pattern. The condition s+m<n is the necessary for the case when pattern occurs at the end of the text. Shift the pattern so that the helper method in text aligns with the last occurrence of it in pattern. The max function is used to make sure that we get a positive shift. We may get a negative shift if the last occurrence of helper method  in pattern is on the right side of the current character. \
+Then we sort the element found from the search method in descending order in accordance of the number of occurrences,\
+}

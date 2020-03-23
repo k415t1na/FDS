@@ -1,0 +1,5 @@
+Apple,Masachusets,089231840,3123
+Samsung,USA,2312350,1233
+Nokia,Provincetown,1231356,4212
+Huawei,China,231324,231
+Telenor,UsA,213423,321
